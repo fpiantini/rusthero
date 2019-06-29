@@ -1,7 +1,7 @@
 # Rusthero
 
 The solution:
-Number of digits: 453421
+Number of digits are: 453421
 
 The number:
 

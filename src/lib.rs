@@ -6,7 +6,6 @@ pub mod rusthero {
 
         let mut r_str = String::from(in_str);
         for _ in 0..iterations {
-            //let mut out_str = r_str;
             r_str = singleiter(&r_str)
         }
         r_str
@@ -31,7 +30,6 @@ pub mod rusthero {
         }
         if cnt > 0 {
             out_str.push_str(&cnt.to_string());
-            //out_str.push(char::from_digit(cnt, 10).unwrap());
             out_str.push(cur_ch);
         }
         out_str
@@ -47,11 +45,11 @@ mod tests {
 
 
     #[test]
-    fn empty_in_empty() {
+    fn empty_is_empty() {
         assert_eq!("", rusthero("", 1));
     }
     #[test]
-    fn test1() {
+    fn more_than_10digits() {
         assert_eq!("112", rusthero("22222222222", 1));
     }
     #[test]
